@@ -1,7 +1,6 @@
 <script lang="ts">
-	import MainScene from '../components/MainScene.svelte';
-	import { scrollPercent } from '../stores/scrollStore';
-
+	import MainScene from '$lib/components/MainScene.svelte';
+	import { scrollPercent } from '$lib/stores/scrollStore';
 	document.body.onscroll = () => {
 		//calculate the current scroll progress as a percentage
 		scrollPercent.update(

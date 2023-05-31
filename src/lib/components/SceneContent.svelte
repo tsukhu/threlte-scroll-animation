@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { T, useRender, useThrelte } from '@threlte/core';
 	import { Color, Quaternion, Vector3 } from 'three';
-	import { scrollPercent } from '../stores/scrollStore';
+	import { scrollPercent } from '$lib/stores/scrollStore';
 	const { camera } = useThrelte();
 	let color = new Color(0x00ff00);
 	let cubePos = new Vector3(0, 0.5, -10);
